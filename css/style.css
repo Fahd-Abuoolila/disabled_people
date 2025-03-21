@@ -1,0 +1,473 @@
+/* Powered By Fahd.Abuoolila */
+body {
+    text-align: right !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    direction: rtl;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    overflow-x: hidden;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+.start_screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0000008e;
+    color: white;
+    font-size: 24px;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.start_screen>button {
+    padding: 10px 20px;
+    background-color: #005bbd9f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 30px;
+    transition: background-color 0.3s;
+    z-index: 999;
+    width: 600px;
+    height: 300px;
+    animation: up_to_down 1.3s infinite ease;
+}
+
+.start_screen>button:hover {
+    background-color: #005bbd;
+    animation: upto_down 1.3s infinite ease;
+}
+
+@keyframes up_to_down {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+header,
+footer {
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 !important;
+    overflow-x: hidden;
+}
+
+header h1 {
+    background-color: #005BBD;
+    width: 100%;
+    padding: 40px;
+}
+
+header h1,
+footer p {
+    margin: 0;
+}
+
+nav {
+    background-color: #45474a;
+    padding: 20px 20px;
+    text-align: center;
+    width: 70%;
+    position: relative;
+    top: -25px;
+    border-radius: 25px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    line-height: 36px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li:hover {
+    border-bottom: 2px solid white;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #005BBD;
+
+}
+
+section#home,
+section#useful-links {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding: 20px !important;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+section h2 {
+    color: #005BBD;
+}
+
+section img {
+    max-width: 612px;
+    max-height: 375px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+section ol {
+    padding: 0;
+    list-style-type: decimal;
+}
+
+section ol li {
+    margin-bottom: 10px;
+}
+
+section ol li a {
+    color: #005BBD;
+    text-decoration: none;
+}
+
+section ol li a:hover {
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #005BBD;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.courses,
+.useful-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 0 40px;
+}
+
+.course {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.course>img {
+    display: block;
+    width: 93px;
+    margin: 10px auto;
+}
+
+.course h3 {
+    margin: 0 0 10px;
+    color: #0056b3;
+    font-size: 19px !important;
+}
+
+.course p {
+    margin: 0 0 5px;
+}
+
+.app-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.app-card img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.app-card a {
+    color: #005BBD;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.app-card a:hover {
+    text-decoration: underline;
+}
+
+.shops {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.shop-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(100% / 3);
+}
+
+.shop-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    width: 230px;
+    height: 120px;
+}
+
+.shop-card a {
+    color: #005BBD;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.shop-card a:hover {
+    text-decoration: underline;
+}
+
+.tip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tip img {
+    width: 600px;
+    animation: up_to_down 2s infinite;
+}
+
+.tip ol {
+    width: calc(100% - 600px);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-right: 30px;
+    line-height: 40px;
+    flex-direction: column;
+}
+
+@media (max-width: 1260px) {
+    .tip {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tip ol {
+        width: 100%;
+    }
+
+    .tip img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1111px) {
+    .shops {
+        flex-direction: column;
+    }
+
+    .shop-card {
+        width: 90%;
+    }
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact>div {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 775px) {
+    .contact {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 645px) {
+    .tip {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 550px) {
+    .tip {
+        margin-top: 40px;
+    }
+}
+
+.contact>.icons {
+    gap: 15px;
+}
+
+.contact>.icons>div>a {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.contact>.icons>div.facebook>a {
+    color: #0234ff !important;
+}
+
+.contact .icons>div.whatsapp>a {
+    color: #24b359 !important;
+}
+
+.contact .icons>div.instagram>a {
+    color: #fe0056 !important;
+}
+
+.contact .icons>div.linkedin>a {
+    color: #0a66c2 !important;
+}
+
+.contact .icons>div.website>a {
+    color: #000 !important;
+}
+
+.contact .icons>div.facebook>a:hover {
+    background: #0234ff !important;
+    color: #fff !important;
+}
+
+.contact .icons>div.whatsapp>a:hover {
+    background: #24b359 !important;
+    color: #fff !important;
+}
+
+.contact .icons>div.instagram>a:hover {
+    background: #fe0056 !important;
+    color: #fff !important;
+}
+
+.contact .icons>div.linkedin>a:hover {
+    background: #0a66c2 !important;
+    color: #fff !important;
+}
+
+.contact .icons>div.website>a:hover {
+    background: #000 !important;
+    color: #fff !important;
+}
+
+footer a {
+    color: #fff !important;
+    text-decoration: none;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 6px;
+}
+
+.carousel-fade .carousel-item {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+    transform: none;
+    position: relative;
+}
+
+.carousel-fade .carousel-item.active {
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: block !important;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    background: transparent;
+    border: none;
+}
