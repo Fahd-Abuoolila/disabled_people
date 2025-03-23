@@ -401,7 +401,7 @@ form input[type="submit"]:hover {
 }
 
 .contact>.icons>div.facebook>a {
-    color: #0234ff !important;
+    color: #0056b3 !important;
 }
 
 .contact .icons>div.whatsapp>a {
@@ -421,7 +421,7 @@ form input[type="submit"]:hover {
 }
 
 .contact .icons>div.facebook>a:hover {
-    background: #0234ff !important;
+    background: #0056b3 !important;
     color: #fff !important;
 }
 
