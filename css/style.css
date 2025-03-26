@@ -310,7 +310,7 @@ form input[type="submit"]:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0 90px;
+    gap: 0 100px;
 }
 
 .tip img {
