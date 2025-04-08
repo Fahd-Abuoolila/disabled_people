@@ -174,13 +174,15 @@ nav .logo button img{
     right: -280px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     width: 0px;
     height: 100vh;
     background: #fff;
     z-index: 999;
     flex-direction: column;
     transition: all 0.5s ease;
+    padding-top: 50px;
+    overflow-y: scroll;
 }
 .menu.open{
     right: 0;
