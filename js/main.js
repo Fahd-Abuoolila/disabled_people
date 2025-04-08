@@ -34,3 +34,28 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     console.log("Powered By Fahd.Abuoolila");
 });
+
+const menu = document.querySelector(".menu");
+document.addEventListener("DOMContentLoaded", () => {
+    const openMenuButton = document.querySelector("#btn-menu");
+    const menuItems = menu.querySelectorAll("li a");
+    openMenuButton.addEventListener("click", () => {
+        menu.classList.toggle("open");
+    });
+    menuItems.forEach(item => {
+        item.addEventListener("click", () => {
+            menu.classList.remove("open");
+        });
+    });
+    document.addEventListener("click", (e) => {
+        if (!menu.contains(e.target) && e.target !== openMenuButton && e.target !== openMenuButton.querySelector("img")) {
+            menu.classList.remove("open");
+        }
+    });
+    menu.addEventListener("click", (e) => {
+        e.stopPropagation();
+    });
+});
+document.getElementById("btn-close").addEventListener("click", function () {
+    menu.classList.remove("open");
+});
